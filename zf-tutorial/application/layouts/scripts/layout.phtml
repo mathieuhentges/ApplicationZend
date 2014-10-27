@@ -1,0 +1,40 @@
+<?php 
+$this->headMeta()->appendHttpEquiv('Content-Type',
+'text/html;charset=utf-8');
+$this->headTitle()->setSeparator(' - ');
+$this->headTitle('Test Technique : Zend Framework');
+echo $this->doctype(); ?>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+lang="en">
+
+<head>
+	<!-- on load le css -->
+<?php echo $this->headLink()->prependStylesheet($this->baseUrl().'/css/site.css')
+							->appendStylesheet($this->baseUrl().'/css/jquery-ui.theme.css');?> 
+<?php echo $this->headMeta(); ?>
+<?php echo $this->headTitle(); ?>
+</head>
+<body>
+<div id="content">
+<h1>
+<?php echo $this->escape($this->title); ?>
+</h1>
+</div>
+
+
+</body>
+</html>
+ 
+
+
+
+<?php echo $this->layout()->content; 
+
+
+echo $this->jQuery()
+	->setVersion('1.5.1')
+	->setUiVersion('1.8.11')
+	->enable()
+	->uiEnable();
+
+?>

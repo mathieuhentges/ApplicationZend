@@ -1,0 +1,33 @@
+body,html {
+margin: 0 5px;
+font-family: Verdana, sans-serif;
+}
+h1 {
+font-size: 1.4em;
+color: blue;
+}
+
+/* style form */
+form dt {
+width: 200px;
+display: block;
+float: left;
+clear: left;
+margin-top: 5px;
+}
+form dd {
+margin-left: 0;
+float: left;
+}
+form #submitbutton {
+margin-left: 35px;
+margin-top: 10px;
+}
+
+#Back{
+display: inline-block;
+margin-top: 100px;	
+margin-left: 10px;
+color : black;
+
+}
